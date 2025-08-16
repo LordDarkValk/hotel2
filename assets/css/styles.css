@@ -1,0 +1,33 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+.tab-button.active {
+    background-color: #2563eb;
+    color: white;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f4f4f4;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+button {
+    transition: background-color 0.3s;
+}
+@media print {
+    header, button:not(.print-button) {
+        display: none;
+    }
+    .tab-content:not(.hidden) {
+        display: block !important;
+    }
+}
