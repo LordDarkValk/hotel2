@@ -22,6 +22,7 @@ tr:nth-child(even) {
 }
 button {
     transition: background-color 0.3s;
+    margin-right: 0.5rem;
 }
 @media print {
     header, button:not(.print-button) {
@@ -29,5 +30,18 @@ button {
     }
     .tab-content:not(.hidden) {
         display: block !important;
+    }
+    .record {
+        page-break-before: always;
+        margin-top: 20px;
+    }
+    .record:first-child {
+        page-break-before: avoid;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    p {
+        margin-bottom: 10px;
     }
 }

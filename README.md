@@ -1,42 +1,44 @@
-Hotel Cleaning System
-A web application for managing hotel room cleaning assignments.
-Setup
+Sistema de Limpeza de Hotel
+Uma aplicação web para gerenciar atribuições de limpeza de quartos em um hotel.
+Configuração
 
-Create the folder structure as shown above.
-Place all files in their respective directories.
-Open index.html in a browser or use VS Code's Live Server extension for development.
+Crie a estrutura de pastas como mostrado acima.
+Coloque todos os arquivos em seus diretórios respectivos.
+Abra index.html em um navegador ou use a extensão Live Server do VS Code para desenvolvimento.
 
-Features
+Recursos
 
-Register Tab: Input maid count, names, and rooms not needing cleaning. Assigns rooms evenly and saves with timestamp.
-Records Tab: View, edit, delete, or print records. Download all records as CSV.
-Responsive Design: Clean, professional UI with Tailwind CSS.
-Data Storage: Uses localStorage for persistent data.
+Aba Registrar: Insira o número de camareiras, nomes e quartos que não precisam de limpeza. Atribui quartos de forma equilibrada e salva com data/hora.
+Aba Registros: Visualize, edite, exclua ou imprima registros. Baixe todos como CSV. Imprima todos de uma vez.
+Design Responsivo: Interface limpa e profissional com Tailwind CSS.
+Armazenamento de Dados: Usa localStorage para persistência de dados.
 
-Room Configuration
-Predefined rooms:
+Configuração de Quartos
+Quartos pré-definidos:
 
-1st Floor: 101-122
-2nd Floor: 201-219
-3rd Floor: 301-314
-4th Floor: 401-416
-5th Floor: 501-512, 514-516
+1º Andar: 101-122
+2º Andar: 201-219
+3º Andar: 301-314
+4º Andar: 401-416
+5º Andar: 501-512, 514-516
 
-Distribution Logic
+Lógica de Distribuição
 
-For floors 1-3: Rooms are distributed in consecutive blocks as evenly as possible among the maids.
-For floors 4-5: Rooms are distributed using round-robin (alternating assignment to maids).
+Para andares 1-3: Combinados em uma lista, filtrados e distribuídos em blocos consecutivos o mais equilibrado possível entre as camareiras.
+Para andares 4-5: Quartos distribuídos usando round-robin (alternando atribuição para camareiras).
 
-Usage
+Uso
 
-In the Register tab, enter the number of maids and their names.
-Specify rooms not needing cleaning (comma-separated).
-Submit to assign rooms and save the record.
-In the Records tab, view all records, edit, delete, or print individual records, or download all as CSV.
+Na aba Registrar, insira o número de camareiras e seus nomes.
+Especifique quartos que não precisam de limpeza (separados por vírgula).
+Envie para atribuir quartos e salvar o registro.
+Na aba Registros, visualize todos, edite, exclua ou imprima registros individuais, baixe todos como CSV ou imprima todos.
 
-Notes
+Notas
 
-Replace assets/images/logo.png with your hotel's logo.
-Uses localStorage, so data persists only in the browser used.
-Ensure all rooms entered are valid (e.g., match the predefined room numbers).
-Rooms in assignments are sorted numerically for display.
+Substitua assets/images/logo.png pelo logo do seu hotel.
+Usa localStorage, então os dados persistem apenas no navegador usado.
+Certifique-se de que os quartos inseridos sejam válidos (correspondam aos pré-definidos).
+Listas de quartos são exibidas em faixas compactas e ordenadas numericamente.
+Edição substitui o registro existente sem duplicar.
+Impressão de todos formata cada registro em página separada, se necessário.
