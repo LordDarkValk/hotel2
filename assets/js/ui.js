@@ -36,7 +36,7 @@ function renderRecords() {
                         <td>
                             <button onclick="editRecord('${r.id}')" class="bg-yellow-600 text-white px-2 py-1 rounded hover:bg-yellow-700" title="Editar este registro">Editar</button>
                             <button onclick="deleteRecordUI('${r.id}')" class="bg-red-600 text-white px-2 py-1 rounded hover:bg-red-700" title="Excluir este registro">Excluir</button>
-                            <button onclick="printRecord('${r.id}')" class="bg-blue-600 text-white px-2 py-1 rounded hover:bg-blue-700 print-button" title="Imprimir este registro">Imprimir</button>
+                            <button onclick="printRecord('${r.id}')" class="bg-primary text-white px-2 py-1 rounded hover:bg-primary-dark print-button" title="Imprimir este registro">Imprimir</button>
                         </td>
                     </tr>
                 `).join('')}

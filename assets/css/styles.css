@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
 }
 .tab-button.active {
-    background-color: #2563eb;
+    background-color: #5e2129;
     color: white;
 }
 table {
@@ -23,6 +23,12 @@ tr:nth-child(even) {
 button {
     transition: background-color 0.3s;
     margin-right: 0.5rem;
+}
+.bg-primary {
+    background-color: #5e2129;
+}
+.hover\:bg-primary-dark:hover {
+    background-color: #4a1a20;
 }
 @media print {
     header, button:not(.print-button) {

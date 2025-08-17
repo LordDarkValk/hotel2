@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body class="bg-gray-100 font-sans">
-    <header class="bg-blue-600 text-white p-4">
+    <header class="bg-primary text-white p-4">
         <div class="container mx-auto flex justify-between items-center">
             <h1 class="text-2xl font-bold">Sistema de Limpeza de Hotel</h1>
             <img src="assets/images/logo.png" alt="Logo do Hotel" class="h-12">
@@ -17,7 +17,7 @@
 
     <main class="container mx-auto p-6">
         <div class="flex border-b-2 border-gray-300 mb-6">
-            <button id="registerTab" class="tab-button px-4 py-2 bg-blue-600 text-white rounded-t-lg">Registrar</button>
+            <button id="registerTab" class="tab-button px-4 py-2 bg-primary text-white rounded-t-lg">Registrar</button>
             <button id="recordsTab" class="tab-button px-4 py-2 bg-gray-300 text-gray-700 rounded-t-lg">Registros</button>
         </div>
 
@@ -35,7 +35,7 @@
                         <label class="block text-gray-700">Quartos que Não Precisam de Limpeza (separados por vírgula, ex.: 101, 202)</label>
                         <input type="text" id="noCleanRooms" class="w-full p-2 border rounded" title="Liste os quartos separados por vírgula">
                     </div>
-                    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 mr-2">Registrar</button>
+                    <button type="submit" class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark mr-2">Registrar</button>
                     <button type="button" id="cancelEdit" class="bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-700 hidden">Cancelar</button>
                 </form>
             </div>
@@ -46,7 +46,7 @@
             <div class="bg-white p-6 rounded-lg shadow-md">
                 <h2 class="text-xl font-semibold mb-4">Registros de Limpeza</h2>
                 <button id="downloadCsv" class="bg-green-600 text-white px-4 py-2 rounded mb-4 hover:bg-green-700 mr-2">Baixar Todos os Registros (CSV)</button>
-                <button id="printAll" class="bg-blue-600 text-white px-4 py-2 rounded mb-4 hover:bg-blue-700">Imprimir Todos os Registros</button>
+                <button id="printAll" class="bg-primary text-white px-4 py-2 rounded mb-4 hover:bg-primary-dark">Imprimir Todos os Registros</button>
                 <div id="recordsTable" class="overflow-x-auto"></div>
             </div>
         </section>

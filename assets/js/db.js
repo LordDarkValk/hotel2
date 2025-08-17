@@ -50,12 +50,10 @@ function distributeRooms(noCleanRooms, maidCount) {
     const earlyAssign = assignConsecutive(earlyFloorsRooms, maidCount);
     earlyAssign.forEach((rooms, i) => assignments[i].push(...rooms));
 
-    // Distribuição round-robin para andares 4-5
-    [FLOOR4, FLOOR5].forEach(floorRooms => {
-        const clean = floorRooms.filter(r => !noCleanSet.has(r));
-        clean.forEach((room, idx) => {
-            assignments[idx % maidCount].push(room);
-        });
+    // Distribuição round-robin para andares 4-5 combinados
+    const lateFloorsRooms = [...FLOOR4, ...FLOOR5].filter(r => !noCleanSet.has(r)).sort((a, b) => parseInt(a) - parseInt(b));
+    lateFloorsRooms.forEach((room, idx) => {
+        assignments[idx % maidCount].push(room);
     });
 
     return assignments;

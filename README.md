@@ -24,8 +24,7 @@ Quartos pré-definidos:
 
 Lógica de Distribuição
 
-Para andares 1-3: Combinados em uma lista, filtrados e distribuídos em blocos consecutivos o mais equilibrado possível entre as camareiras.
-Para andares 4-5: Quartos distribuídos usando round-robin (alternando atribuição para camareiras).
+Para todos os andares (1-5): Combinados em uma lista, filtrados e distribuídos em blocos consecutivos o mais equilibrado possível entre as camareiras.
 
 Uso
 
@@ -42,3 +41,4 @@ Certifique-se de que os quartos inseridos sejam válidos (correspondam aos pré-
 Listas de quartos são exibidas em faixas compactas e ordenadas numericamente.
 Edição substitui o registro existente sem duplicar.
 Impressão de todos formata cada registro em página separada, se necessário.
+A cor do site foi alterada para #5e2129 (roxo escuro).
